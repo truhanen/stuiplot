@@ -1,0 +1,30 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "truhanen.stuiplot"
+version = "0.1.0"
+description = "Script for plotting s-tui logs"
+license = "MIT"
+authors = ["Tuukka Ruhanen <tuukka.t.ruhanen@gmail.com>"]
+homepage = "https://github.com/truhanen/stuiplot"
+readme = "README.md"
+classifiers = [
+  "Topic :: Utilities",
+]
+packages = [
+  {include = "truhanen"},
+]
+
+[tool.poetry.scripts]
+stuiplot = "truhanen.stuiplot:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+matplotlib = ">=3.4.0"
+numpy = ">=1.21.0"
+pandas = ">=1.3.0"
+
+[too.isort]
+profile = "black"
