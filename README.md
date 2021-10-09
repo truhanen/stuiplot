@@ -2,6 +2,8 @@
 
 Script for plotting [s-tui](https://github.com/amanusk/s-tui) logs.
 
+![Example figure](../media/media/example.png?raw=true)
+
 ## Usage
 
 ```
